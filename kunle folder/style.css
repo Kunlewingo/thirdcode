@@ -1,0 +1,79 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar, .content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+/*sidebar call*/
+.sidebar, .image_div img {
+    width : 200px;
+    height : 100px;
+}
+
+/* put the cars in two rows and two columns*/
+.image_div{
+    
+}
+
+
+
+/*media query*/
+  @media (max-width : 1024px) and (min-width : 768px){
+    .sidebar {
+        background-color : yellow;
+        
+    }
+    .content{
+        background-color : blue;
+    }
+    }
+
+    @media (max-width : 767px){
+        main {
+            flex-direction: column;
+        }
+        .sidebar, .content{
+            width : 100%;
+        }
+        
+        }
+    }
+  
+ 
+/* Sidebar width for larger screens */
+.sidebar {
+    width: 30%;
+}
+
+.content {
+    width: 70%;
+}
+
